@@ -1,0 +1,88 @@
+{
+    "property_list": [
+      { "id": 1, 
+        "name": "condo", 
+        "img" :"https://drive.google.com/uc?id=1m36_iiCG2u8no0TNW2Nmxgf9zSYYtAsl",
+        "description": "this is the condo you can look at it",
+      "list" :[
+        {
+          "id":1,"name":"condo1","price":125.45,"address": "60 stevenesen road","img" :"https://drive.google.com/uc?id=1DPmzYVcYroI1lBdjTn1SGFYzVq-bzONO" 
+        }, {
+          "id":2,"name":"condo2","price":126.45,"address": "61 stevenesen road","img" :"https://drive.google.com/uc?id=1wMrNwBRvbQnMkpHqNLdbOk5Mi8uXdkkr"  
+        }, {
+          "id":3,"name":"condo3","price":127.45,"address": "62 stevenesen road","img" :"https://drive.google.com/uc?id=14igx3-Wv5sF16fQ1jBRighBGvFXYpyGq"  
+        }, {
+          "id":4,"name":"condo4","price":128.45,"address": "63 stevenesen road","img" :"https://drive.google.com/uc?id=12qCNYZ3v7v04GmQKoKMUXY6LdP-j9zrl"  
+        }, {
+          "id":5,"name":"condo5","price":129.45,"address": "64 stevenesen road","img" :"https://drive.google.com/uc?id=1IpvVBxG8RADYw77MhcydZboW5eCd8aQw"  
+        }
+          
+  
+      ] },{
+         "id": 2, 
+          "name": "resort", 
+          "description": "this is the resorts you can look at it",
+          "img":"https://drive.google.com/uc?id=1aVAMI56KY5g9HQaPtRrURa2x2rWB1S2h",
+        "list" :[
+          {
+            "id":1,"name":"resort1","price":125.45,"address": "60 stevenesen road","img" :"https://drive.google.com/uc?id=1aVAMI56KY5g9HQaPtRrURa2x2rWB1S2h"  
+          }, {
+            "id":2,"name":"resort2","price":126.45,"address": "61 stevenesen road","img" :"https://drive.google.com/uc?id=1MKJpag9vNWs5ZPCPRPoQ8uTapsuxytHm"  
+          }, {
+            "id":3,"name":"resort3","price":127.45,"address": "62 stevenesen road","img" :"https://drive.google.com/uc?id=1LqZM1qFYX8Dcl-tlZeHhvHFJevItPRuA"  
+          }, {
+            "id":4,"name":"resort4","price":128.45,"address": "63 stevenesen road","img" :"https://drive.google.com/uc?id=1wn5sjgK4kYFI6nGlC027sjzPgW7Rm8OQ"  
+          }, {
+            "id":5,"name":"resort5","price":129.45,"address": "64 stevenesen road","img" :"https://drive.google.com/uc?id=1BAsGHhq2vsyvQKJ6-KlMfrLgRRg4pjIF"  
+          }
+        ] 
+
+      },{
+        "id": 3, 
+         "name": "appartments", 
+         "description": "this is the appartments you can look at it",
+         "img": "https://drive.google.com/uc?id=1lu5h2Qim8KAwjP1kd0l0a-OaGbJER32Z",
+       "list" :[
+         {
+           "id":1,"name":"appartment1","price":125.45,"address": "60 stevenesen road","img" :"https://drive.google.com/uc?id=1lu5h2Qim8KAwjP1kd0l0a-OaGbJER32Z"  
+         }, {
+           "id":2,"name":"appartment2","price":126.45,"address": "61 stevenesen road","img" :"https://drive.google.com/uc?id=14igx3-Wv5sF16fQ1jBRighBGvFXYpyGq"  
+         }, {
+           "id":3,"name":"appartment3","price":127.45,"address": "62 stevenesen road","img" :"https://drive.google.com/uc?id=1E-BO-aud8Qt2jJK4S1bzuYLqGvbVAb51"  
+         }, {
+           "id":4,"name":"appartment4","price":128.45,"address": "63 stevenesen road","img" :"https://drive.google.com/uc?id=1jMz7Qg_zUR3HOukU9JHqiSYtNumFL_cp"  
+         }, {
+           "id":5,"name":"appartment5","price":129.45,"address": "64 stevenesen road","img" :"https://drive.google.com/uc?id=1pwB3VCV5z5xBQB7RQf7abdTKu3nLQuzN"  
+         }
+       ] 
+
+     },{
+      "id": 4, 
+       "name": "hotels", 
+       "description": "this is the hotels you can look at it",
+       "img" : "https://drive.google.com/uc?id=19uIV89mP6B9JV99hcyUswUUnQhKsUKCc",
+     "list" :[
+       {
+         "id":1,"name":"hotel1","price":125.01,"address": "60 stevenesen road","img" :"https://drive.google.com/uc?id=19uIV89mP6B9JV99hcyUswUUnQhKsUKCc"  
+       }, {
+         "id":2,"name":"hotel2","price":126.02,"address": "61 stevenesen road","img" :"https://drive.google.com/uc?id=1bdVHA9DkzEx7YMrMd2AsT5jSS2W5kJiL"  
+       }, {
+         "id":3,"name":"hotel3","price":127.03,"address": "62 stevenesen road","img" :"https://drive.google.com/uc?id=10HcWHHSMMdiet2dAhW6S8f90A41y-NSR"  
+       }, {
+         "id":4,"name":"hotel4","price":128.04,"address": "63 stevenesen road","img" :"https://drive.google.com/uc?id=1gQ2effLkjyhMdNMRUt7ysxU0vMFLKbBX"  
+       }, {
+         "id":5,"name":"hotel5","price":129.05,"address": "64 stevenesen road","img" :"https://drive.google.com/uc?id=1txBh9IMNIjgV_WhGQgens7T7kjBTnO27"  
+       }
+     ] 
+
+   }
+    ],
+
+    "property_description" :[
+      {"id" : 1,"address" : "60 stevensen road","name" : "TorontoResort", "price" : 150.01,"img":"https://drive.google.com/uc?id=1txBh9IMNIjgV_WhGQgens7T7kjBTnO27"},
+      {"id" : 2,"address" : "61 stevensen road","name" : "BramptonCondo","price" : 151.01,"img":"https://drive.google.com/uc?id=1jMz7Qg_zUR3HOukU9JHqiSYtNumFL_cp"},
+      {"id" : 3,"address" : "62 stevensen road","name" : "EtobicokeHotel","price" : 152.01,"img":"https://drive.google.com/uc?id=1MKJpag9vNWs5ZPCPRPoQ8uTapsuxytHm"},
+      {"id" : 4,"address" : "63 stevensen road","name" : "SarniaAppartments","price" : 153.01,"img":"https://drive.google.com/uc?id=1DPmzYVcYroI1lBdjTn1SGFYzVq-bzONO"}
+    ]
+   
+  }

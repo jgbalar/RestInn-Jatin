@@ -1,0 +1,94 @@
+.property{
+    .prize{
+            position: relative;
+            display: flex;
+            width: 100%;
+            margin-top: 10px;
+            height: 100px;
+            .desc{
+            h3{
+                font-size: 50px;
+                padding-left: 5px;
+                margin-bottom:-20px ;
+            }
+            p{
+                margin-left: 15px;
+                margin-top: -20px;
+                font-size: 12px;
+            }
+        }
+        .desc1{
+            position: absolute;
+            // top:30%;
+            top: 15%;
+            left : 92%
+        }
+
+    }
+    .description{
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        .image{
+            width: 70%;
+            height:900px;
+            position: relative;
+            display: block;
+            img{
+                border-radius: 10px;
+                position: absolute;
+                width :100%;
+                padding-left: 5px;
+                height : 500px;
+            }
+        }
+        .information{
+            margin-left: 10PX;
+            width : 30%;
+            .location{
+                width: 100%;
+               
+                img{
+                    height: 250px;
+                    width: 100%;
+                    border-radius: 8px;
+                }
+                p{
+                    margin-top: 15px;
+                    margin-left: 10px;
+                }
+                // width: 100%;
+                
+            }
+            .review{
+                    .rating{
+                        display: flex;
+                        .badge{
+                            height: 30px;
+                            font-size: 13px;
+                            align-items: center;
+                            text-align: center;
+                        }
+                        .text{
+                            margin-left: 5px;
+                            margin-top: -5px;
+                            p{
+                                font-size: 12px;
+                                margin-top: -5px;
+                            }
+
+                        }
+                    }
+                    .customerreview{
+                    .customer{
+                        #date{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+}
