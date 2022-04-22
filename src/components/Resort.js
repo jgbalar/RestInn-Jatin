@@ -3,6 +3,16 @@ import '../SCSS/Resort.scss'
 import img1 from '../assets/resortImages/1.jpg'
 import { Link } from 'react-router-dom';
 const Resort = (props) => {
+  const {amenities,
+bestseller,
+description,
+id,
+img,
+location,
+price,
+rules,
+title,
+type} = props.element
   return (
     <div>
         <div className="card">
@@ -13,7 +23,7 @@ const Resort = (props) => {
             <div className='col-4'>
             <div className="card-body">
               <div className='name'>
-                <h5 className="card-title">{props.element.name}</h5><p>{props.element.address}</p>
+                <h5 className="card-title">{props.element.title}</h5><p>{location.streetAddress}</p>
                 </div>
                 <div className='keypoint'>
                   <h6>Crown Point</h6>
@@ -32,7 +42,7 @@ const Resort = (props) => {
                   <div className='goto'>
                     <span className = 'price'><b> {props.element.price} CAD</b></span>
                     <p className='text-success'>free cancellation</p>
-                <Link to="" className="btn btn-primary rounded-pill">Book Now </Link>
+                <Link to={`/propertydescription/${props.element.title}`} className="btn btn-primary rounded-pill">Book Now </Link>
                 </div>
                 </div>
             

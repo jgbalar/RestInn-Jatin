@@ -11,7 +11,7 @@ const Property = (props) => {
       <div className="card-body">
         <h5 className="card-title">{props.name}</h5>
         <p className="card-text">{props.description}</p>
-        <Link to={`/property-sorting/${props.id}`} className="btn">Search</Link>
+        <Link to={`/property-sorting/${props.type}`} className="btn">Search</Link>
       </div>
     </div>
 

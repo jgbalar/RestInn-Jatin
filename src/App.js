@@ -12,6 +12,8 @@ import PropertyDescriptionPage from './WebPage/PropertyDescriptionPage';
 import LogIn from './WebPage/LogIn'
 import SignUp from './WebPage/SignUp'
 import PropertyTypePage from './WebPage/PropertyTypePage';
+import DashBoard from './components/DashBoard';
+import Logout from './WebPage/Logout';
 
 function App() {
   return (
@@ -23,10 +25,12 @@ function App() {
       <Route path="property-sorting" element={<PropertyListing />} />
       <Route path="propertydescription/:name" element={<PropertyDescriptionPage />} />
       <Route path="property-sorting/:variable" element={<PropertyListing />} />
+      <Route path="dashboard" element={<DashBoard />} />
+      <Route path="dashboard/:id" element={<DashBoard />} />
+      <Route path='logout' element={<Logout/>} />
       <Route path="propertytypepage" element={<PropertyTypePage />} />
+      <Route path="propertytypepage/:data" element={<PropertyTypePage />} />
        <Route path="property-sorting/:variable/propertydescription/:name" element={<PropertyDescriptionPage />} />
-
-      
     </Routes>
   </BrowserRouter>
   );

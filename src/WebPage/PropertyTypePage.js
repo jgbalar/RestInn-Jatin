@@ -4,65 +4,66 @@ import Resort from '../components/Resort'
 import FilteredItem from '../components/FilteredItem';
 import '../PageScss/PropertyTypePage.scss'
 import { useState,useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import AllItems from '../components/AllItems';
 import Header from '../components/Header.js'
 import Footer from '../components/Footer.js'
 const PropertyTypePage = () => {
+  const[data1,setData1]=useState("")
+  const params = useParams();
     let a = [];
     let count = 0;
-    const [data,setData] = useState([{"id":0,
-  name: "",
-  description : "",
-  list :[]
-}
+    const [data,setData] = useState([{id:"",
+ img:"",
+ title:"",
+ description:"",
+ price:"",
+ location:{streetAddress:"",city:"",state:"",country:"",zip:""},
+ type:"",
+ rules:"",
+ amenities:"",
+ bestseller:false}
 ])
 useEffect(()=>{
-    fetch("http://localhost:5000/property_list").then(response => response.json()).then(json=>{
-            json.forEach(element => {
-           element.list.forEach(e1 => {
-               a.push(e1);
-           });
-        });
-      setData(a);
-
+  
+  if(params.data){
+    fetch(`https://backendrestinn.herokuapp.com/api/properties/${params.data.toLocaleLowerCase()}`).then(response => response.json()).then(json=>{
+      setData(json)
     }).catch(err=>{
       console.log(err);
     })
+  }else{
+    fetch("https://backendrestinn.herokuapp.com/api/properties").then(response => response.json()).then(json=>{ 
+      setData(json);
+    }).catch(err=>{
+      console.log(err);
+    })
+  }
+  
     
   },[])
  
   return (
     <div>
-        <Header />
+        <Header setData ={setData} />
       <div className='parent'>
-
-      <Filter/>  
-       <div className='container border'>
-           {
-             
-               data.map((element1)=>{
-
+      <Filter/> 
+      {
+        (data[0].id!=="")?(
+          <div className='container border'>
+             {
+                 data.map((element1)=>{
+                      return(
+                          <Resort element = {element1} key = {count++} />
+                      );
                     
-                  
-                    return(
-                        <Resort element = {element1} key = {count++} />
-                    );
-                  
-               })
-           }
-       </div>
-   
+                 })
+             }
+         </div>
+        ):(<h2 style={{"marginLeft" : "20px","marginTop" : "20px" }}>There is no property {params.data}</h2>)
+      } 
       
-        {/* {
-            data.map((element1)=> 
-            {
-            return(
-               
-            <AllItems element={element1} key = {element1.id} />
-            )
-        })
-        } */}
-       
+      
       </div>
       <Footer />
     </div>

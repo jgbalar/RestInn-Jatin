@@ -27,7 +27,7 @@ const PropertyList = () => {
   let row = 0;
 
   useEffect(()=>{
-    fetch("http://localhost:5000/property_list").then(response =>response.json()).then(json=>{
+    fetch("https://backendrestinn.herokuapp.com/api/propertydescription").then(response =>response.json()).then(json=>{
       setList(json)
     }).catch(err=>{
       console.log(err);
@@ -46,7 +46,7 @@ const PropertyList = () => {
                   x.push(<div className='row row-sm-3 g-2'>
                   {list.slice(count, count+4).map((element)=>{
                     return(
-                    <Property key ={count++} id = {element.id} img = {element.img} name = {element.name} description = {element.description} list = {element.list} />
+                    <Property key ={count++} id = {element.id} type = {element.type} img = {element.img} name = {element.type} description = {element.description} list = {element.list} />
                     )
                   })
                   }

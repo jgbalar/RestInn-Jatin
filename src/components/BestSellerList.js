@@ -19,7 +19,7 @@ return count;
 const BestSellerList = () => {
   const [data,setData] = useState([{id : 0,name : "", address : ""}])
   useEffect(()=>{
-    fetch("http://localhost:5000/property_description").then(response => response.json()).then(json=>{
+    fetch("https://backendrestinn.herokuapp.com/api/properties/bestseller?bestseller=true").then(response => response.json()).then(json=>{
       setData(json);
     }).catch(err=>{
       console.log(err);
@@ -40,7 +40,7 @@ const BestSellerList = () => {
                 {data.slice(count, count+4).map((element)=>{
 
                   return(
-                    <BestSeller img = {element.img} name = {element.name} key ={element.id}/>
+                    <BestSeller img = {element.img} name = {element.title} key ={element.id}/>
                   )
                 })
                 }
